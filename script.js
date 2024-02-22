@@ -136,7 +136,7 @@ function updateUI(movies){
 };
 
 function getMovieDetail (id){
-  return fetch('http://www.omdbapi.com/?apikey=3a86d8a7&i=' + id)
+  return fetch('https://www.omdbapi.com/?apikey=3a86d8a7&i=' + id)
       .then(response => response.json())
       .then(m => m)
 };
