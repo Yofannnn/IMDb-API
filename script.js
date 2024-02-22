@@ -113,7 +113,7 @@ document.addEventListener('click' , async function(e){
 });
 
 function getMovies(inputkeyword){
-  return fetch('http://www.omdbapi.com/?apikey=3a86d8a7&s=' + inputkeyword)
+  return fetch('https://www.omdbapi.com/?apikey=3a86d8a7&s=' + inputkeyword)
       .then(response => {
         if(!response.ok){
           throw new Error(response.statusText);
@@ -147,10 +147,6 @@ function updateUIDetail(moviedetail){
   modalBody.innerHTML = movieDetail;
 };
 // async await  ====>  end
-
-
-
-
 
 
 function showCards(m) {
